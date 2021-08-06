@@ -90,7 +90,7 @@ export default {
 
 <style scoped>
 .container {
-  background: #212229;
+  background-image: linear-gradient(to right, #3e4049, #1d1e25);
   justify-content: center;
   align-items: center;
   display: flex;

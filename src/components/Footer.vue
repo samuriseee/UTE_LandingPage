@@ -18,7 +18,7 @@
       <span>Suspense</span>
       <span>Destroy</span>
       <span>Execution</span>
-      Dangerous
+      <span>Dangerous</span>
       <span>Growth</span>
       <span>Sabotage</span>
       <span>Sashimi</span>
@@ -40,7 +40,7 @@ footer {
   position: relative;
   padding: 8rem 0 1rem;
   font-size: 1rem;
-  background: #212229;
+  background-image: linear-gradient(to right, #3e4049, #1d1e25);
 }
 footer marquee {
   position: absolute;
@@ -57,6 +57,7 @@ footer marquee span {
   margin: 0 0.75rem;
 }
 footer marquee span:nth-child(even) {
+  color: #f10c44;
   font-weight: 900;
 }
 footer .logo {

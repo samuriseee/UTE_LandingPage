@@ -31,20 +31,20 @@
     </section>
     <Symbtoms />
     <Statistics />
-    <!-- <Footer /> -->
+    <Footer />
   </body>
 </template>
 
 <script>
 // import Navbar from "./components/Navbar.vue";
 import Symbtoms from "./components/Symbtoms.vue";
-// import Footer from "./components/Footer.vue";
+import Footer from "./components/Footer.vue";
 import Statistics from "./components/Statistics.vue";
 export default {
   components: {
     // Navbar,
     Symbtoms,
-    // Footer,
+    Footer,
     Statistics,
   },
 };
