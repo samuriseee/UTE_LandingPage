@@ -21,7 +21,7 @@
             aliquam laboriosam vero fugiat dolores cumque esse sequi vel quos.
           </p>
           <div class="btn">
-            <button style="color: #f10c44; background: #fff">
+            <button style="color: #008dc9; background: #fff">
               Lorem ipsum
             </button>
             <button>Lorem ipsum</button>
@@ -31,21 +31,23 @@
     </section>
     <Symbtoms />
     <Statistics />
+    <Prevention />
     <Footer />
   </body>
 </template>
 
 <script>
-// import Navbar from "./components/Navbar.vue";
+import Prevention from "./components/Prevention.vue";
 import Symbtoms from "./components/Symbtoms.vue";
 import Footer from "./components/Footer.vue";
 import Statistics from "./components/Statistics.vue";
+
 export default {
   components: {
-    // Navbar,
     Symbtoms,
     Footer,
     Statistics,
+    Prevention,
   },
 };
 </script>
@@ -56,6 +58,16 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: "Oswald Regular", sans-serif;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffb6af;
+  clip-path: circle(26.4% at 10% 23%);
+  z-index: 1;
 }
 header {
   position: absolute;
@@ -94,6 +106,7 @@ header ul li a {
 }
 header ul li a:active,
 header ul li a:hover {
+  color: #fff;
   background: #f10c44;
   z-index: 99;
   border-radius: 40px;
@@ -106,7 +119,7 @@ header ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url("https://www.linkpicture.com/q/italy.jpg");
+  background: url("https://www.linkpicture.com/q/italy_1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,15 +135,16 @@ header ul li a:hover {
   position: relative;
   max-width: 600px;
   /* top:200px; */
+  z-index: 3;
 }
 .content .textBox h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 6em;
   line-height: 1.4em;
   text-transform: uppercase;
 }
 .content .textBox p {
-  color: #fff;
+  color: rgb(255, 245, 245);
   font-size: 1.2rem;
 }
 .content .textBox .btn {
@@ -139,7 +153,7 @@ header ul li a:hover {
 .content .textBox .btn button {
   display: inline-block;
   margin-right: 2rem;
-  background: #f10c44;
+  background: #008dc9;
   color: #fff;
   border-radius: 40px;
   font-weight: 400;
@@ -147,7 +161,7 @@ header ul li a:hover {
   letter-spacing: 1px;
   padding: 15px 35px;
   outline: none;
-  border: 1px solid #f10c44;
+  border: 1px solid #008dc9;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   cursor: pointer;
 }

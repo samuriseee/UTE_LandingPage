@@ -7,6 +7,7 @@
         voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
       </p>
     </div>
+    <Sparkline />
     <section>
       <div class="static" style="border-bottom: 4px solid #b1995d">
         <img src="https://www.linkpicture.com/q/i1_1.png" alt="" />
@@ -49,7 +50,11 @@
 </template>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+import Sparkline from "./Sparkline.vue";
 export default {
+  components: {
+    Sparkline,
+  },
   data() {
     return {};
   },
@@ -93,10 +98,9 @@ export default {
   background-image: linear-gradient(to right, #3e4049, #1d1e25);
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 10px 0px 4rem 0px;
+  padding: 0px 0px 2rem 0px;
 }
 .container .title {
   margin: 3rem 0rem 2rem;
@@ -130,7 +134,7 @@ export default {
 }
 .container section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 280px 280px 280px 280px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -149,6 +153,12 @@ export default {
   justify-content: center;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container section .static:hover {
+  transform: translate(0, -10px);
 }
 .container section .static img {
   object-fit: cover;

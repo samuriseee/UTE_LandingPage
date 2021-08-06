@@ -84,7 +84,7 @@ export default {
   align-items: center;
   background: #f9f9f9;
   font-weight: 400;
-  padding: 10px 0px 4rem 0px;
+  padding: 10px 0px 1rem 0px;
 }
 .container .title {
   margin: 3rem 0rem 2rem;
