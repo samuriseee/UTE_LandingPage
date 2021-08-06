@@ -1,3 +1,4 @@
+
 const message = document.querySelector('.message');
 const button = document.querySelector('button');
 const gameArea = document.querySelector('.gameArea');
@@ -6,6 +7,7 @@ const directions = document.querySelector('.directions');
 let inPlay = false;
 let playArea = {};
 let count = 0;
+
 
 function showMessage(notification){
     message.innerHTML = `<h3>${notification}</h3>`;

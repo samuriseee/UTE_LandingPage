@@ -1,15 +1,21 @@
 .box{
     position: relative;
     border-radius: 50%;
-    background-image: url(./imgs/coronavirus-4947717_960_720.png);
+    background-image: url(./imgs/virus1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     animation-name: box_a;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    
 } 
+
+.box:hover {
+    background-color: rgba(255, 0, 0, 0.472);
+    
+}
 
 @keyframes box_a {
     0%   {transform: scaleZ(1.2);
@@ -25,7 +31,7 @@
   }
 
 
-.ct{
+.container-game{
     margin: auto;
     text-align: center;
     font-size: 1em;
@@ -34,8 +40,11 @@
     width: 70%;
     height: 500px;
     border: 1px solid black;
-    background-color: bisque;
+    border-radius: 8px;
+    background-color: rgb(109, 162, 215);
+    cursor: url("./imgs/4236.png_860-removebg-preview\ \(2\).png"),pointer;
 }
+
 
 button{
     font-size: 1.5rem;
