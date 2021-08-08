@@ -1,6 +1,6 @@
 
 const message = document.querySelector('.message');
-const button = document.querySelector('button');
+const button = document.querySelector('.button_game');
 const gameArea = document.querySelector('.gameArea');
 const results = document.querySelector('.results');
 const directions = document.querySelector('.directions');
