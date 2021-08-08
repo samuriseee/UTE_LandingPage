@@ -139,6 +139,16 @@ export default {
   justify-content: center;
   margin: 0 auto;
 }
+@media (max-width: 991px) {
+  .container section {
+    grid-template-columns: 280px 280px;
+  }
+}
+@media (max-width: 500px) {
+  .container section {
+    grid-template-columns: 280px;
+  }
+}
 .container section .static {
   width: 250px;
   height: 220px;

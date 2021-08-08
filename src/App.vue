@@ -2,7 +2,8 @@
   <body>
     <header>
       <div class="logo"><img src="./img/logo.png" alt="" /></div>
-      <ul>
+      <div class="menuToggle" @click="toggleMenu()"></div>
+      <ul class="navigation">
         <li><a href="">Home</a></li>
         <li><a href="">Profile</a></li>
         <li><a href="">Resume</a></li>
@@ -32,6 +33,7 @@
     <Symbtoms />
     <Statistics />
     <Prevention />
+    <Games />
     <Footer />
   </body>
 </template>
@@ -41,13 +43,33 @@ import Prevention from "./components/Prevention.vue";
 import Symbtoms from "./components/Symbtoms.vue";
 import Footer from "./components/Footer.vue";
 import Statistics from "./components/Statistics.vue";
-
+import Games from "./components/Games.vue";
 export default {
   components: {
     Symbtoms,
     Footer,
     Statistics,
     Prevention,
+    Games,
+  },
+  mounted() {
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    // eslint-disable-next-line
+    // function toggleMenu() {
+    //   const menuToggle = document.querySelector('.menuToggle');
+    //   menuToggle.classList.toggle('active');
+    // }
+  },
+  methods: {
+    toggleMenu() {
+      const menuToggle = document.querySelector(".menuToggle");
+      const navigation = document.querySelector(".navigation");
+      menuToggle.classList.toggle("active");
+      navigation.classList.toggle("active");
+    },
   },
 };
 </script>
@@ -59,41 +81,87 @@ export default {
   box-sizing: border-box;
   font-family: "Oswald Regular", sans-serif;
 }
-.circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffb6af;
-  clip-path: circle(26.4% at 10% 23%);
-  z-index: 1;
-}
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
   z-index: 15;
+}
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px !important;
+  }
+  header .navigation {
+    display: none !important;
+  }
+  header .navigation.active {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    background: #fff !important;
+  }
+  header .navigation.active li {
+    margin-left: 0rem;
+    padding: 10px;
+  }
+  header .navigation.active li a {
+    font-size: 1.6em;
+    color: #000;
+    font-weight: 300px;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("./img/menu.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active {
+    background: url("./img/close.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9;
+    filter: invert(1);
+  }
+  header.sticky .menuToggle {
+    filter: invert(1);
+  }
+  header .logo {
+    z-index: 99;
+  }
 }
 header .logo img {
   width: 60px;
+  z-index: 999;
 }
-header ul {
+header .navigation {
   justify-content: center;
   align-items: center;
   position: relative;
   display: flex;
 }
-header ul li {
+header .navigation li {
   margin-left: 1.5rem;
   list-style: none;
 }
-header ul li a {
+header .navigation li a {
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -104,12 +172,23 @@ header ul li a {
   padding: 10px;
   z-index: 99;
 }
-header ul li a:active,
-header ul li a:hover {
+header .navigation li a:active,
+header .navigation li a:hover {
   color: #fff;
   background: #f10c44;
   z-index: 99;
   border-radius: 40px;
+}
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgb(0, 0, 0, 0.05);
+}
+header.sticky .navigation li a {
+  color: #000;
+}
+header.sticky .navigation li a:hover {
+  color: #fff;
 }
 .mainSec {
   position: relative;
@@ -131,6 +210,18 @@ header ul li a:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .content {
+    justify-content: center;
+  }
+  .content .textBox h1 {
+    font-size: 4rem !important;
+  }
+  .content .textBox .btn button {
+    padding: 10px 15px !important;
+    margin-right: 1rem !important;
+  }
+}
 .content .textBox {
   position: relative;
   max-width: 600px;
@@ -149,6 +240,7 @@ header ul li a:hover {
 }
 .content .textBox .btn {
   margin-top: 3rem;
+  display: flex;
 }
 .content .textBox .btn button {
   display: inline-block;

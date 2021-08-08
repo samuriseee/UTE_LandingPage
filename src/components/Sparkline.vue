@@ -7,16 +7,7 @@
           light
           max-width="1090"
         >
-          <h1
-            style="
-              text-align: left;
-              margin-left: 40px;
-              font-weight: 500;
-              padding: ;
-            "
-          >
-            2020 - Cases by month
-          </h1>
+          <h1>2020 - Cases by month</h1>
           <v-card-text>
             <v-sparkline
               :labels="labels"
@@ -48,7 +39,7 @@
             <v-sparkline
               :labels="labels1"
               :value="value1"
-              :gradient="gradients[1]"
+              :gradient="gradients[3]"
               :smooth="radius || false"
               :padding="padding"
               :line-width="width"
@@ -88,7 +79,7 @@ export default {
     radius: 10,
     padding: 10,
     lineCap: "round",
-    gradient: gradients[0],
+    gradient: gradients[2],
     gradientDirection: "top",
     gradients,
     type: "trend",
@@ -102,6 +93,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  overflow-x: hidden;
+}
 .v-card {
   position: relative;
   margin: 0 auto;
@@ -113,7 +107,63 @@ export default {
   margin: 10px 0px 0px 50px;
   font-weight: 100;
 }
+.hooper-slide .is-active .is-current {
+  overflow: hidden;
+}
 .hooper {
+  width: 100%;
   height: 35vh;
+  transition: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .hooper {
+    height: 34vh;
+  }
+}
+@media (max-width: 950px) {
+  .hooper {
+    height: 30vh;
+  }
+}
+@media (max-width: 825px) {
+  .hooper {
+    height: 28vh;
+  }
+}
+@media (max-width: 760px) {
+  .hooper {
+    height: 26vh;
+  }
+}
+@media (max-width: 678px) {
+  .hooper {
+    height: 24vh;
+  }
+}
+@media (max-width: 620px) {
+  .hooper {
+    height: 22vh;
+  }
+}
+@media (max-width: 575px) {
+  .hooper {
+    height: 20vh;
+  }
+}
+@media (max-width: 500px) {
+  .hooper {
+    height: 18vh;
+  }
+}
+@media (max-width: 450px) {
+  .hooper {
+    height: 17vh;
+  }
+}
+@media (max-width: 450px) {
+  .hooper {
+    height: 16vh;
+  }
 }
 </style>

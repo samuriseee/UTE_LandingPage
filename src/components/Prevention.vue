@@ -57,7 +57,7 @@ export default {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  padding: 10px 0px 5rem 0px;
+  padding: 10px 0px 0rem 0px;
 }
 .container .title {
   margin: 3rem 0rem 2rem;
@@ -114,5 +114,15 @@ img {
 .slideBox h1 {
   font-size: 5rem;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .slideBox h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .slideBox h1 {
+    font-size: 3.5rem;
+  }
 }
 </style>

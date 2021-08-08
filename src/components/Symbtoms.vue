@@ -10,7 +10,7 @@
     <section>
       <div class="card" v-for="symbtom in symbtoms" :key="symbtom.num">
         <div class="flex">
-          <div class="box"><img :src="symbtom.image" /></div>
+          <div class="imgBox"><img :src="symbtom.image" /></div>
           <div class="service-number">
             <div class="service-v1-number">{{ symbtom.num }}</div>
             <span class="small-text-v1">/05</span>
@@ -120,6 +120,16 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
 }
+@media (max-width: 991px) {
+  .container section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .container section {
+    grid-template-columns: 1fr;
+  }
+}
 .container section .card {
   width: 350px;
   height: 350px;
@@ -165,11 +175,11 @@ export default {
   padding: 20px 0px;
   text-transform: uppercase;
 }
-section .card .flex .box {
+section .card .flex .imgBox {
   border: 0.5px solid rgb(190, 186, 186);
   border-bottom: 5px solid #f10c44;
 }
-section .card .flex .box img {
+section .card .flex .imgBox img {
   width: 80px;
   height: 80px;
 }
