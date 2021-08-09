@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <hooper :vertical="true">
+    <hooper :centerMode="true" :vertical="true">
       <slide>
         <v-card
           class="mx-auto text-center justify-center align-center"
@@ -56,12 +56,12 @@
     </hooper>
   </div>
 </template>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
 const gradients = [
-  ["#f10c44"],
+  ["#428BCB"],
   ["#42b3f4"],
   ["red", "orange", "yellow"],
   ["purple", "violet"],
@@ -79,7 +79,7 @@ export default {
     radius: 10,
     padding: 10,
     lineCap: "round",
-    gradient: gradients[2],
+    gradient: gradients[0],
     gradientDirection: "top",
     gradients,
     type: "trend",

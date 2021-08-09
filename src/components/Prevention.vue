@@ -7,29 +7,68 @@
         voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
       </p>
     </div>
-    <hooper style="hei">
+    <hooper :autoPlay="true" :playSpeed="2000" :transition="400">
       <slide>
-        <div class="slideBox">
+        <div
+          class="slideBox"
+          style="
+            background: url(https://www.linkpicture.com/q/56_14.jpg) rgba(2, 2, 2, 0.3);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        >
           <h1>Heal Declaration</h1>
         </div>
       </slide>
       <slide>
-        <div class="slideBox">
+        <div
+          class="slideBox"
+          style="
+            background: url(https://www.linkpicture.com/q/How-to-work-effectively-and-practice-social-distancing-during-coronavirus_1.jpg) rgba(2, 2, 2, 0.3);
+            background-size: cover;
+            background-position: center;
+          "
+        >
           <h1>Social Distance</h1>
         </div>
       </slide>
       <slide>
-        <div class="slideBox">
+        <div
+          class="slideBox"
+          style="
+            background: url(https://www.linkpicture.com/q/italy_1.jpg) rgba(2, 2, 2, 0.3);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        >
           <h1>Wearing Mask</h1>
         </div>
       </slide>
       <slide>
-        <div class="slideBox">
+        <div
+          class="slideBox"
+          style="
+            background: url(https://www.linkpicture.com/q/washhand_1.jpg) rgba(2, 2, 2, 0.3);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        >
           <h1>Wash Hand</h1>
         </div>
       </slide>
       <slide>
-        <div class="slideBox">
+        <div
+          class="slideBox"
+          style="
+            background: url(https://www.linkpicture.com/q/shutterstock_1679261281-3_1.jpg) rgba(2, 2, 2, 0.3);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        >
           <h1>No Gather Around</h1>
         </div>
       </slide>
@@ -60,7 +99,7 @@ export default {
   padding: 10px 0px 0rem 0px;
 }
 .container .title {
-  margin: 3rem 0rem 2rem;
+  margin: 0rem 0rem 2rem;
   text-align: center;
   color: #000;
 }
@@ -100,8 +139,6 @@ img {
 .slideBox {
   width: 100%;
   height: 50vh;
-  background: url("https://www.linkpicture.com/q/italy_1.jpg")
-    rgba(2, 2, 2, 0.3);
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -118,11 +155,13 @@ img {
 @media (max-width: 768px) {
   .slideBox h1 {
     font-size: 4rem;
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
   .slideBox h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 </style>

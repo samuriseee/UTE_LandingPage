@@ -103,7 +103,7 @@ export default {
   padding: 0px 0px 2rem 0px;
 }
 .container .title {
-  margin: 3rem 0rem 2rem;
+  margin: 0rem 0rem 2rem;
   text-align: center;
   color: #fff;
 }
@@ -177,5 +177,9 @@ export default {
 .container section .static h1 {
   font-size: 3rem;
   font-weight: 500;
+}
+.container section .static h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 </style>

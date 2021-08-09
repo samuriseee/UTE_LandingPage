@@ -2,7 +2,7 @@
   <footer>
     <marquee>
       <span>Vuejs</span>
-      <span>Digital product design </span>
+      <span>Digital product design</span>
       <span>Distributed teams</span>
       <span>S-group</span>
       <span>UX design</span>
@@ -32,13 +32,72 @@
       <span>Experimentation</span>
       <!-- <span v-for="item in marqueeItems" :key="item"></span> -->
     </marquee>
+    <div class="content">
+      <div class="author">
+        <h3>Nguyen Tuan Kiet</h3>
+        <div class="info">
+          <p><span>Student ID:</span>2050531200205</p>
+          <p><span>Class:</span>20T2</p>
+          <p><span>Gmail:</span>gonhungho123@gmail.com</p>
+          <p><span>Phone Number:</span>0798842001</p>
+          <h4>
+            <ul class="social-network social-circle">
+              <p class="None">Contact Us:</p>
+              <li>
+                <a href="" class="icoFacebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="icoTwitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="" class="icoTwitch"><i class="fab fa-twitch"></i></a>
+              </li>
+              <li>
+                <a href="" class="icoIg"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+
+      <div class="author">
+        <h3>Huynh Trong Khoa</h3>
+        <div class="info">
+          <p><span>Student ID:</span>2050531200216</p>
+          <p><span>Class:</span>20T2</p>
+          <p><span>Gmail:</span>htk11235@gmail.com</p>
+          <p><span>Phone Number:</span>0964952761</p>
+          <h4>
+            <ul class="social-network social-circle">
+              <p class="None">Contact Us:</p>
+              <li>
+                <a href="" class="icoFacebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="icoTwitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="" class="icoTwitch"><i class="fab fa-twitch"></i></a>
+              </li>
+              <li>
+                <a href="" class="icoIg"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
 <style scoped>
 footer {
   position: relative;
-  padding: 8rem 0 1rem;
+  padding: 4rem 0 1rem;
   font-size: 1rem;
   background-image: linear-gradient(to right, #3e4049, #1d1e25);
 }
@@ -58,44 +117,113 @@ footer marquee span {
 }
 footer marquee span:nth-child(even) {
   color: #f10c44;
-  font-weight: 900;
-}
-footer .logo {
-  display: inline-flex;
-  font-family: "Imperator", sans-serif;
-  text-transform: uppercase;
-  font-size: 2.3rem;
-  max-width: 18.375rem;
-  margin-bottom: 1.5rem;
-}
-footer .logo ul {
-  display: flex;
-  margin: 2rem 0 2.5rem -2rem;
-  list-style: none;
-  justify-content: center;
-}
-footer .logo ul a {
-  display: inline-block;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 750;
-  text-decoration: none;
-  font-family: "Basis Grotesque Pro", sans-serif;
-}
-footer .logo ul a::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.2s;
+  font-weight: 500;
 }
 .bottom-text {
   font-size: 0.75rem;
   font-weight: 650;
   opacity: 0.8;
   font-family: "Basis Grotesque Pro", sans-serif;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  display: flex;
+}
+.content .author {
+  width: 100%;
+}
+.content .author h3 {
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+.content p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.content span {
+  color: #f10c44;
+  padding: 0 20px;
+  font-size: 1.15rem;
+}
+.content .author .info {
+  padding: 10px;
+}
+.content .author ul {
+  width: 80%;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+.social-network a.icoTwitch:hover {
+  background-color: #6441a4;
+}
+.social-network a.icoIg:hover {
+  background-image: linear-gradient(to right, #f9ed32, #ee2a7b);
+}
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoIg:hover i,
+.social-network a.icoTwitch:hover i {
+  color: #fff;
+}
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+.social-circle li a:hover i,
+.triggeredHover {
+  transform: rotate(360deg);
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #fff;
+  transition: all 0.8s;
+  transition: all 0.8s;
+}
+@media (max-width: 1065px) {
+  .None {
+    display: none;
+  }
+  .content .author ul {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 515px) {
+  .content {
+    flex-direction: column;
+  }
 }
 </style>

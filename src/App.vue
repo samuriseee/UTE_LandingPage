@@ -1,7 +1,10 @@
 <template>
   <body>
     <header>
-      <div class="logo"><img src="./img/logo.png" alt="" /></div>
+      <div class="logo">
+        Fight<span style="color: #428bcb">Covid</span
+        ><span style="color: #fb6260">.</span>
+      </div>
       <div class="menuToggle" @click="toggleMenu()"></div>
       <ul class="navigation">
         <li><a href="">Home</a></li>
@@ -30,20 +33,25 @@
         </div>
       </div>
     </section>
+
     <Symbtoms />
     <Statistics />
     <Prevention />
     <Games />
+    <Blogs />
     <Footer />
+    <Messenger />
   </body>
 </template>
 
 <script>
+import Messenger from "./components/MessengerPlugins.vue";
 import Prevention from "./components/Prevention.vue";
 import Symbtoms from "./components/Symbtoms.vue";
 import Footer from "./components/Footer.vue";
 import Statistics from "./components/Statistics.vue";
 import Games from "./components/Games.vue";
+import Blogs from "./components/Blogs.vue";
 export default {
   components: {
     Symbtoms,
@@ -51,6 +59,8 @@ export default {
     Statistics,
     Prevention,
     Games,
+    Blogs,
+    Messenger,
   },
   mounted() {
     window.addEventListener("scroll", function () {
@@ -79,7 +89,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 header {
   position: fixed;
@@ -147,8 +157,9 @@ header {
     z-index: 99;
   }
 }
-header .logo img {
-  width: 60px;
+header .logo {
+  font-size: 2rem;
+  text-transform: uppercase;
   z-index: 999;
 }
 header .navigation {
@@ -165,7 +176,7 @@ header .navigation li a {
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(7, 7, 7);
   font-weight: 400;
   transition: 0.1s ease-in-out;
   cursor: pointer;
@@ -175,7 +186,7 @@ header .navigation li a {
 header .navigation li a:active,
 header .navigation li a:hover {
   color: #fff;
-  background: #f10c44;
+  background: #fb6260;
   z-index: 99;
   border-radius: 40px;
 }
@@ -198,7 +209,7 @@ header.sticky .navigation li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url("https://www.linkpicture.com/q/italy_1.jpg");
+  background: url("https://www.linkpicture.com/q/Pngtreecartoon_hand_drawn_simple_virus_1274587.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,13 +240,13 @@ header.sticky .navigation li a:hover {
   z-index: 3;
 }
 .content .textBox h1 {
-  color: rgb(255, 255, 255);
+  color: #428bcb;
   font-size: 6em;
   line-height: 1.4em;
   text-transform: uppercase;
 }
 .content .textBox p {
-  color: rgb(255, 245, 245);
+  color: rgb(0, 0, 0);
   font-size: 1.2rem;
 }
 .content .textBox .btn {
@@ -245,7 +256,7 @@ header.sticky .navigation li a:hover {
 .content .textBox .btn button {
   display: inline-block;
   margin-right: 2rem;
-  background: #008dc9;
+  background: #428bcb;
   color: #fff;
   border-radius: 40px;
   font-weight: 400;
@@ -253,7 +264,7 @@ header.sticky .navigation li a:hover {
   letter-spacing: 1px;
   padding: 15px 35px;
   outline: none;
-  border: 1px solid #008dc9;
+  border: 1px solid #428bcb;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   cursor: pointer;
 }

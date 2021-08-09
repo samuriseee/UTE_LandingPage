@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title">
-      <h1>Corona virus <span style="color: #f10c44">symbtoms</span></h1>
+      <h1>Corona virus <span style="color: #428bcb">symbtoms</span></h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
         voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
@@ -89,6 +89,7 @@ export default {
 .container .title {
   margin: 3rem 0rem 2rem;
   text-align: center;
+  color: #000;
 }
 .container .title h1 {
   font-size: 2rem;
@@ -100,7 +101,7 @@ export default {
   padding-left: 16px;
 }
 .container .title h1:before {
-  background-color: #f10c44;
+  background-color: #428bcb;
   content: "";
   display: block;
   margin-top: -1px;
@@ -132,7 +133,7 @@ export default {
 }
 .container section .card {
   width: 350px;
-  height: 350px;
+  height: 360px;
   border: 0.5px solid rgb(190, 186, 186);
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
@@ -146,7 +147,7 @@ export default {
   cursor: pointer;
 }
 .container section .card:hover {
-  border-bottom: 4px solid #f10c44;
+  border-bottom: 4px solid #428bcb;
 }
 .container section .flex {
   display: flex;
@@ -156,7 +157,7 @@ export default {
 .service-number {
   position: relative;
   opacity: 0.2;
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 .service-number .small-text-v1 {
@@ -172,12 +173,13 @@ export default {
   line-height: 64px;
 }
 .card h3 {
-  padding: 20px 0px;
+  font-size: 1.6rem;
+  padding: 15px 0px;
   text-transform: uppercase;
 }
 section .card .flex .imgBox {
   border: 0.5px solid rgb(190, 186, 186);
-  border-bottom: 5px solid #f10c44;
+  border-bottom: 5px solid #428bcb;
 }
 section .card .flex .imgBox img {
   width: 80px;

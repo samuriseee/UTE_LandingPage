@@ -1,5 +1,12 @@
 <template>
-  <div class="container123">
+  <div class="container">
+    <div class="title">
+      <h1>Corona virus <span style="color: #f10c44">symbtoms</span></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
+      </p>
+    </div>
     <div class="container-game">
       <div class="directions">
         <h3>
@@ -91,7 +98,7 @@ export default {
         playArea.timer = setTimeout(myBox, random(4000));
         count++;
         if (count === 15) {
-          results.innerHTML = `Bạn đã đạt ${renderCount(
+          results.innerHTML = `Your sroce is ${renderCount(
             count
           )} Points! <span id="winner">YOU DID IT!!!</span> <br> Click start to play again.`;
           resetGame();
@@ -136,6 +143,36 @@ export default {
 </script>
 
 <style>
+.container .title {
+  margin: 0rem 0rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+.container .title h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+}
+.container .title h1:before {
+  background-color: #f10c44;
+  content: "";
+  display: block;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 5px;
+}
+.container .title p {
+  width: 70%;
+  font-size: 1rem;
+  margin: 0 auto;
+}
 .box {
   position: relative;
   border-radius: 50%;
@@ -176,7 +213,7 @@ export default {
     -webkit-transform: scale(1.2);
   }
 }
-.container123 {
+.container {
   background-image: linear-gradient(to right, #3e4049, #1d1e25);
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,8 +222,9 @@ export default {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  padding: 4rem 0px 4rem 0px;
+  padding: 10px 0px 4rem 0px;
 }
+
 .container-game {
   background: #f9f9f9;
   margin: 0 auto;
@@ -202,7 +240,7 @@ export default {
 }
 
 .start {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin: 3rem auto;
   background: #f9f9f9;
   border: none;
@@ -224,13 +262,59 @@ export default {
   color: #f10c44;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2em;
+}
+@media (max-width: 1100px) {
+  h3 {
+    font-size: 1.6em;
+  }
+  .results123 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .message {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.3em;
+  }
+  .results123 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .message {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 786px) {
+  .box {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 640px) {
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+  .container-game {
+    width: 98%;
+    height: 80vh;
+  }
+}
+@media (max-width: 400px) {
+  .container-game {
+    width: 98%;
+    height: 80vh;
+  }
 }
 .results123 {
-  font-size: 1.3rem;
+  font-size: 1.3em;
   font-weight: bold;
 }
 .message {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 </style>
