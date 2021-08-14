@@ -55,6 +55,7 @@
     <Postes id="blog" />
     <Footer />
     <Messenger />
+    <CallPlugins />
   </body>
 </template>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -68,6 +69,7 @@ import Games from "./components/common/Games.vue";
 import Postes from "./components/common/Postes.vue";
 import Author from "./components/uncommon/Author.vue";
 import Author1 from "./components/uncommon/Author1.vue";
+import CallPlugins from "./components/uncommon/CallPlugins.vue";
 export default {
   components: {
     Symbtoms,
@@ -79,6 +81,7 @@ export default {
     Messenger,
     Author,
     Author1,
+    CallPlugins,
   },
   data() {
     return {
@@ -90,7 +93,7 @@ export default {
       const header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > 0);
     });
-    
+
     setTimeout(() => {
       this.isLoading = false;
     }, 2500);

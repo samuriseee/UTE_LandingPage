@@ -19,6 +19,7 @@
         <div>
           <a
             href="https://au.reachout.com/articles/10-ways-to-take-care-of-yourself-during-coronavirus"
+            target="_blank"
             >Read more</a
           >
         </div>
@@ -34,6 +35,7 @@
         <div>
           <a
             href="https://www.huffpost.com/entry/how-scientific-is-modern_b_543158"
+            target="_blank"
             >Read more</a
           >
         </div>
@@ -49,6 +51,7 @@
         <div>
           <a
             href="https://www.unicef.org/serbia/en/take-care-yourself-time-covid-19-outbreak"
+            target="_blank"
             >Read more</a
           >
         </div>
