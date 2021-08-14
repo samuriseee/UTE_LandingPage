@@ -137,6 +137,9 @@ export default {
     width: 90% !important;
     height: auto !important;
   }
+  .container .title p {
+    font-size:0.8rem !important;
+  }
 }
 .container section .card {
   width: 350px;

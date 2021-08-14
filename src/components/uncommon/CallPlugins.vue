@@ -18,7 +18,7 @@ export default {};
   width: 50px;
   height: 50px;
   left: 20px;
-  bottom: 20px;
+  bottom: 30px;
   background: #10b418;
   position: fixed;
   text-align: center;
