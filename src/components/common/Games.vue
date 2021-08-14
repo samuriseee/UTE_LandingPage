@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title">
-      <h1>Mini <span style="color: #f10c44">Game</span></h1>
+      <h1>Mini <span style="color: #428bcb">Game</span></h1>
       <p>Let see if you can defeat it on your first try</p>
     </div>
     <div class="container-game">
@@ -155,7 +155,7 @@ export default {
   padding-left: 16px;
 }
 .container .title h1:before {
-  background-color: #f10c44;
+  background-color: #428bcb;
   content: "";
   display: block;
   margin-top: -1px;
