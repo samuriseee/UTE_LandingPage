@@ -10,7 +10,7 @@
       </div>
       <div class="menuToggle" @click="toggleMenu()"></div>
       <ul class="navigation">
-        <li><a v-scroll-to="'#home'" class="active">Home</a></li>
+        <li><a v-scroll-to="'#home'" class="active">Overview</a></li>
         <li><a v-scroll-to="'#symbtoms'">Symbtoms</a></li>
         <li><a v-scroll-to="'#statis'">Statistics</a></li>
         <li><a v-scroll-to="'#prevention'">Prevention</a></li>
@@ -22,11 +22,20 @@
     <section class="mainSec" id="home">
       <div class="content">
         <div class="textBox">
-          <h1>Quarantine <br />Devotees</h1>
+          <h1>
+            <span style="color: #fff">Stay</span> Home<br />Stay<span
+              style="color: #fff"
+            >
+              Safe</span
+            >
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab ea
-            esse natus deleniti. Sunt, nisi perferendis. Eaque, aut labore
-            aliquam laboriosam vero fugiat dolores cumque esse sequi vel quos.
+            <span class="blue"> STAY HOME </span>,<span class="blue">
+              STAY SAFE
+            </span>
+            and <span class="blue">STAY MOTIVATED!</span> Keeping team members
+            motivated amid unprecedented times such as the COVID-19 crisis is
+            indeed a challenge.
           </p>
           <div class="btn">
             <Author />
@@ -57,7 +66,6 @@ import Footer from "./components/common/Footer.vue";
 import Statistics from "./components/common/Statistics.vue";
 import Games from "./components/common/Games.vue";
 import Postes from "./components/common/Postes.vue";
-// import Loader from "./components/uncommon/Loader.vue";
 import Author from "./components/uncommon/Author.vue";
 import Author1 from "./components/uncommon/Author1.vue";
 export default {
@@ -69,7 +77,6 @@ export default {
     Postes,
     Games,
     Messenger,
-    // Loader,
     Author,
     Author1,
   },
@@ -83,12 +90,7 @@ export default {
       const header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > 0);
     });
-    // eslint-disable-next-line
-    // function toggleMenu() {
-    //   const menuToggle = document.querySelector('.menuToggle');
-    //   menuToggle.classList.toggle('active');
-    // }
-
+    
     setTimeout(() => {
       this.isLoading = false;
     }, 2500);
@@ -346,5 +348,9 @@ header.sticky .navigation li a {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+.blue {
+  color: #9bd0ff;
+  font-weight: 500;
 }
 </style>

@@ -3,37 +3,55 @@
     <div class="title">
       <h1>Blog <span style="color: #428bcb">Postes</span></h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
+        As COVID-19 continues to spread, we're taking action to help people
+        around the world find information and stay connected.
       </p>
     </div>
     <div class="blogs">
       <div class="blog">
         <img src="../../img/Blogs/1.jpeg" alt="" />
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+        <h3>10 WAYS TO STAY HEALTHY AND SAFE FROM CORONA VIRUS</h3>
         <p>
-          Lorem ipsum dolor sit amet, consect etur adipis icing elit. Quasi quae
-          accus.
+          Stay active. It's pretty well known that exercise is really good for
+          both our physical and mental health. There's heaps of different types
+          of exercise you can ...
         </p>
-        <div><a href="">Read more</a></div>
+        <div>
+          <a
+            href="https://au.reachout.com/articles/10-ways-to-take-care-of-yourself-during-coronavirus"
+            >Read more</a
+          >
+        </div>
       </div>
       <div class="blog">
         <img src="../../img/Blogs/2.jpeg" alt="" />
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+        <h3>HOW SCIENTIFIC IS MODERN MEDICINE REALLY?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consect etur adipis icing elit. Quasi quae
-          accus.
+          The combined efforts of the drug companies and the medical profession,
+          which together may be called the "medical-industrial complex," have
+          been ...
         </p>
-        <div><a href="">Read more</a></div>
+        <div>
+          <a
+            href="https://www.huffpost.com/entry/how-scientific-is-modern_b_543158"
+            >Read more</a
+          >
+        </div>
       </div>
       <div class="blog third">
         <img src="../../img/Blogs/3.jpeg" alt="" />
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+        <h3>Take care of yourself in the time of COVID-19 outbreak</h3>
         <p>
-          Lorem ipsum dolor sit amet, consect etur adipis icing elit. Quasi quae
-          accus.
+          Ask questions, educate yourself and listen to information from
+          reliable ... of the viral infection multiple times throughout the day
+          can be disturbing. Take ..
         </p>
-        <div><a href="">Read more</a></div>
+        <div>
+          <a
+            href="https://www.unicef.org/serbia/en/take-care-yourself-time-covid-19-outbreak"
+            >Read more</a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -54,7 +72,7 @@ export default {};
   padding: 10px 0px 3rem 0px;
 }
 .container .title {
-  margin: 3rem 0rem 2rem;
+  margin: 0rem 0rem 1rem;
   text-align: center;
   color: #000;
 }
@@ -124,6 +142,7 @@ export default {};
   font-size: 1.5rem;
   padding: 5px 0px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .blogs .blog p {
   font-size: 1.2rem;

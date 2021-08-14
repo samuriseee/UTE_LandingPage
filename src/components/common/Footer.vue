@@ -2,22 +2,22 @@
   <footer>
     <marquee>
       <span>Vuejs</span>
-      <span>Digital product design</span>
-      <span>Distributed teams</span>
-      <span>S-group</span>
-      <span>UX design</span>
-      <span>Frontend</span>
-      <span>Remote work</span>
-      <span>Developer</span>
-      <span>Creativity</span>
-      <span>Strategy</span>
-      <span>Design</span>
-      <span>Why</span>
+      <span>Wash Hand</span>
+      <span>Fight Covid</span>
+      <span>NPM</span>
+      <span>Run</span>
+      <span>Dev</span>
+      <span>Safe</span>
+      <span>Wear Mask</span>
+      <span>Avoid</span>
+      <span>Stay Home</span>
+      <span>Keep Calm</span>
+      <span>Chill</span>
       <span>Why not</span>
-      <span>Failure</span>
+      <span>Netflix</span>
       <span>Suspense</span>
-      <span>Destroy</span>
-      <span>Execution</span>
+      <span>Together</span>
+      <span>Fight</span>
       <span>Dangerous</span>
       <span>Growth</span>
       <span>Sabotage</span>
@@ -35,11 +35,11 @@
     <div class="content">
       <div class="link-boxes">
         <ul class="boxfooter">
-          <li class="link_name">Company</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Get started</a></li>
+          <li class="link_name">Navigation</li>
+          <li><a v-scroll-to="'#home'">Symbtoms</a></li>
+          <li><a v-scroll-to="'#home'">Statistics</a></li>
+          <li><a v-scroll-to="'#home'">Prevention</a></li>
+          <li><a v-scroll-to="'#home'">Overview</a></li>
         </ul>
         <ul class="boxfooter">
           <li class="link_name">Services</li>
@@ -56,7 +56,7 @@
           <li><a href="#">Purchase</a></li>
         </ul>
         <ul class="boxfooter">
-          <li class="link_name">Courses</li>
+          <li class="link_name">Skills</li>
           <li><a href="#">HTML & CSS</a></li>
           <li><a href="#">JavaScript</a></li>
           <li><a href="#">Photography</a></li>
@@ -72,11 +72,11 @@
     <div class="bottom-details">
       <div class="bottom_text">
         <span class="copyright_text"
-          >Copyright © 2021 <a href="#">Logo.</a>All rights reserved</span
+          >Copyright © 2021 <a href="#">Vuejs</a>All rights</span
         >
         <span class="policy_terms">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms & condition</a>
+          <a href="#">NPM run serve</a>
+          <a href="#">Samuriseee</a>
         </span>
       </div>
     </div>
@@ -148,6 +148,7 @@ footer .content .link-boxes .boxfooter {
   text-decoration: none;
   opacity: 0.8;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .content .link-boxes .boxfooter li a:hover {
   opacity: 1;

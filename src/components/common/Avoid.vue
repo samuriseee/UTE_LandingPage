@@ -8,8 +8,9 @@
         <div class="avoid-content">
           <h3>Wear a mask if available</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-            accusamus,
+            You should wear a mask, even if you do not feel sick. This is
+            because several studies have found that people with COVID-19 who
+            never develop symptoms
           </p>
         </div>
       </div>
@@ -18,8 +19,9 @@
         <div class="avoid-content">
           <h3>COVER NOSE WHEN SNEEZING</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-            accusamus,
+            Cover your mouth and nose with a tissue when you cough or sneeze, If
+            you don’t have a tissue, cough or sneeze into your elbow, not your
+            hands
           </p>
         </div>
       </div>
@@ -28,8 +30,9 @@
         <div class="avoid-content">
           <h3>SEEK MEDICAL CARE REGULARLY</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-            accusamus,
+            Regular health check-ups can identify any early signs of health
+            issues. Finding problems early means that your chances for effective
+            treatment are increased.
           </p>
         </div>
       </div>
@@ -42,8 +45,8 @@
         <div class="avoid-content">
           <h3>DON’T TOUCH YOUR FACE OR NOSE</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-            accusamus,
+            Respiratory infections can be caused by many different bacteria and
+            viruses, including the virus that causes COVID-19
           </p>
         </div>
       </div>
@@ -52,8 +55,9 @@
         <div class="avoid-content">
           <h3>AVOID CONTACT SICK PEOPLE</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-            accusamus,
+            Inside your home: Avoid close contact with people who are sick. If
+            possible, maintain 2m between the person who is sick and other
+            household members
           </p>
         </div>
       </div>
@@ -62,8 +66,9 @@
         <div class="avoid-content">
           <h3>AVOID CROWDED PLACES</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-            accusamus,
+            COVID-19 can spread in poorly ventilated and/or crowded indoor
+            settings. ... You can protect yourself by avoiding or limiting time
+            spent in crowded places
           </p>
         </div>
       </div>

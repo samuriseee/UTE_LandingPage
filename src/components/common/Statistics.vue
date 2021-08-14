@@ -3,8 +3,8 @@
     <div class="title">
       <h1>Recent <span style="color: #428bcb">Statistics</span></h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
+        Official Coronavirus (COVID-19) disease situation dashboard with latest
+        data in Viet Nam.
       </p>
     </div>
     <v-lazy
@@ -20,7 +20,7 @@
       <div class="static" style="border-bottom: 4px solid #b1995d">
         <img src="https://www.linkpicture.com/q/virus.svg" alt="" />
         <div id="counter">
-          <h1 class="counter-value" data-count="1650345" style="color: #b1995d">
+          <h1 class="counter-value" data-count="255748" style="color: #b1995d">
             0
           </h1>
         </div>
@@ -29,7 +29,7 @@
       <div class="static" style="border-bottom: 4px solid #6d2c30">
         <img src="https://www.linkpicture.com/q/death.svg" alt="" />
         <div id="counter">
-          <h1 class="counter-value" data-count="103277" style="color: #6d2c30">
+          <h1 class="counter-value" data-count="5088" style="color: #6d2c30">
             0
           </h1>
         </div>
@@ -38,7 +38,7 @@
       <div class="static" style="border-bottom: 4px solid #0655b2">
         <img src="https://www.linkpicture.com/q/Quarantine.svg" alt="" />
         <div id="counter">
-          <h1 class="counter-value" data-count="388555" style="color: #0655b2">
+          <h1 class="counter-value" data-count="92738" style="color: #0655b2">
             0
           </h1>
         </div>
@@ -47,11 +47,11 @@
       <div class="static">
         <img src="https://www.linkpicture.com/q/critical.svg" alt="" />
         <div id="counter">
-          <h1 class="counter-value" data-count="1869" style="color: #f10c44">
+          <h1 class="counter-value" data-count="157918" style="color: #f10c44">
             0
           </h1>
         </div>
-        <h3>Critical Cases</h3>
+        <h3>In Recovery</h3>
       </div>
     </section>
   </div>
@@ -114,7 +114,7 @@ export default {
   padding: 0px 0px 2rem 0px;
 }
 .container .title {
-  margin: 0rem 0rem 2rem;
+  margin: 0rem 0rem 1rem;
   text-align: center;
   color: #000;
 }

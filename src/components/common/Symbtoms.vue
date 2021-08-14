@@ -1,10 +1,11 @@
 <template>
   <div class="container">
     <div class="title">
-      <h1>Corona virus <span style="color: #428bcb">symbtoms</span></h1>
+      <h1>Corona virus <span style="color: #428bcb">symptoms</span></h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
+        COVID-19 affects different people in different ways. Most infected
+        people will develop mild to moderate illness and recover without
+        hospitalization.
       </p>
     </div>
     <section>
@@ -32,42 +33,42 @@ export default {
           name: "Coughing & Sneezing",
           image: "https://www.linkpicture.com/q/cough.svg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae accusamus, aut necessitatibus porro quisquam ab! Exercit ationem sit",
+            "The coronavirus (COVID-19) is a viral illness spread through droplets via coughing, sneezing, and close personal contact",
           num: "00",
         },
         {
-          name: "STRONG HEADACKE",
+          name: "STRONG HEADAChEs",
           image: "https://www.linkpicture.com/q/headache.svg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae accusamus, aut necessitatibus porro quisquam ab! Exercit ationem sit",
+            "The severe headache of COVID-19 only lasts a few days, while in others, it can last up to months. It is presenting mostly as a whole-head, severe-pressure pain",
           num: "01",
         },
         {
           name: "SHORTNESS OF BREATH",
           image: "https://www.linkpicture.com/q/breath.svg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae accusamus, aut necessitatibus porro quisquam ab! Exercit ationem sit",
+            "Shortness of breath can make it hard to breathe.Your chest may feel too tight to inhale or exhale fully. Each shallow breath takes greater effort and leaves you feeling winded",
           num: "02",
         },
         {
           name: "HIGH FEVER",
           image: "https://www.linkpicture.com/q/Fever.svg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae accusamus, aut necessitatibus porro quisquam ab! Exercit ationem sit",
+            "A fever is a high temperature. A high temperature is usually considered to be 38C or higher. Drinking fluids regularly can stop them becoming dehydrated.",
           num: "03",
         },
         {
           name: "SORE THROAT",
           image: "https://www.linkpicture.com/q/sore.svg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae accusamus, aut necessitatibus porro quisquam ab! Exercit ationem sit",
+            "A sore throat is often an early symptom. Because respiratory viruses are inhaled, they enter your nose and throat first. They may replicate there early on, leading to throat soreness and irritation.",
           num: "04",
         },
         {
           name: "NO SENSE OF TASTE",
           image: "https://www.linkpicture.com/q/taste.svg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae accusamus, aut necessitatibus porro quisquam ab! Exercit ationem sit",
+            "Cause the loss of taste and smell. Taste and smell can return or get better within 4 weeks of the virus clearing the body, but it may sometimes take months for them to improve.",
           num: "05",
         },
       ],
@@ -87,7 +88,7 @@ export default {
   padding: 10px 0px 1rem 0px;
 }
 .container .title {
-  margin: 3rem 0rem 2rem;
+  margin: 3rem 0rem 0.7rem;
   text-align: center;
   color: #000;
 }

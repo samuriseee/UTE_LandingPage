@@ -2,10 +2,7 @@
   <div class="container">
     <div class="title">
       <h1>Mini <span style="color: #f10c44">Game</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
-      </p>
+      <p>Let see if you can defeat it on your first try</p>
     </div>
     <div class="container-game">
       <div class="directions">

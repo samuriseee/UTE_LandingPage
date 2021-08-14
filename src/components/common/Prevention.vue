@@ -3,8 +3,9 @@
     <div class="title">
       <h1><span style="color: #428bcb">Avoid</span> Getting Infected</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        voluptas atque pariatur labore, accusantium hic neque rerum ipsum illum.
+        Protect yourself and others around you by knowing the facts and taking
+        appropriate precautions. Follow advice provided by your local health
+        authority.
       </p>
     </div>
     <hooper :autoPlay="true" :playSpeed="1300" :transition="400">
@@ -12,8 +13,7 @@
         <div
           class="slideBox"
           style="
-            background: url(https://www.linkpicture.com/q/56_14.jpg)
-              rgba(2, 2, 2, 0.3);
+            background: url(https://www.linkpicture.com/q/56_14.jpg) rgba(2, 2, 2, 0.3);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -26,8 +26,7 @@
         <div
           class="slideBox"
           style="
-            background: url(https://www.linkpicture.com/q/How-to-work-effectively-and-practice-social-distancing-during-coronavirus_1.jpg)
-              rgba(2, 2, 2, 0.3);
+            background: url(https://www.linkpicture.com/q/How-to-work-effectively-and-practice-social-distancing-during-coronavirus_1.jpg) rgba(2, 2, 2, 0.3);
             background-size: cover;
             background-position: center;
           "
@@ -39,8 +38,7 @@
         <div
           class="slideBox"
           style="
-            background: url(https://www.linkpicture.com/q/italy_1.jpg)
-              rgba(2, 2, 2, 0.3);
+            background: url(https://www.linkpicture.com/q/italy_1.jpg) rgba(2, 2, 2, 0.3);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -53,8 +51,7 @@
         <div
           class="slideBox"
           style="
-            background: url(https://www.linkpicture.com/q/washhand_1.jpg)
-              rgba(2, 2, 2, 0.3);
+            background: url(https://www.linkpicture.com/q/washhand_1.jpg) rgba(2, 2, 2, 0.3);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -67,14 +64,13 @@
         <div
           class="slideBox"
           style="
-            background: url(https://www.linkpicture.com/q/shutterstock_1679261281-3_1.jpg)
-              rgba(2, 2, 2, 0.3);
+            background: url(https://www.linkpicture.com/q/shutterstock_1679261281-3_1.jpg) rgba(2, 2, 2, 0.3);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
           "
         >
-          <h1>No Gather Around</h1>
+          <h1>Vaccination</h1>
         </div>
       </slide>
       <hooper-pagination slot="hooper-addons"></hooper-pagination>
@@ -107,7 +103,7 @@ export default {
   padding: 10px 0px 0rem 0px;
 }
 .container .title {
-  margin: 0rem 0rem 2rem;
+  margin: 0rem 0rem 1rem;
   text-align: center;
   color: #000;
 }
