@@ -1,3 +1,5 @@
+deploy link: https://laughing-goldberg-6bc415.netlify.app;
+
 # covidladipage
 
 ## Project setup
